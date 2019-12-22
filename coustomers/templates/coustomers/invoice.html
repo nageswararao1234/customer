@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Title</title>
+        <style type="text/css">
+            body {
+                font-weight: 200;
+                font-size: 14px;
+            }
+            .header {
+                font-size: 20px;
+                font-weight: 100;
+                text-align: center;
+                color: #007cae;
+            }
+            .title {
+                font-size: 22px;
+                font-weight: 100;
+               /* text-align: right;*/
+               padding: 10px 20px 0px 20px;
+            }
+            .title span {
+                color: #007cae;
+            }
+            .details {
+                padding: 10px 20px 0px 20px;
+                text-align: left !important;
+                /*margin-left: 40%;*/
+            }
+            .hrItem {
+                border: none;
+                height: 1px;
+                /* Set the hr color */
+                color: #333; /* old IE */
+                background-color: #fff; /* Modern Browsers */
+            }
+        </style>
+    </head>
+    <body>
+        <div class='wrapper'>
+            <div class='header'>
+                <p class='title'>Invoice # </p>
+            </div>
+        <div>
+        <div class='details'>
+            Coustomer Name : {{coustomer.name}}
+                        <hr class='hrItem' />
+            Coustomer Details<br>
+            NAME : {{coustomer.name}}<br>
+            AGE : {{coustomer.age}}<br>
+            MOBILE NUMBER : {{coustomer.mobile}}<br>
+            CITY : {{coustomer.city}}<br>
+
+
+        </div>
+        </div>
+        </div>
+    </body>
+</html>

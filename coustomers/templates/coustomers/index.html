@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+</head>
+<body>
+
+<table style="width:80%">
+  <tr>
+    <td><strong>Name</strong></td>
+    <td><strong>text-format</strong></td>
+    <td><strong>pdf-format</strong></td>
+  </tr>
+    {% for coustomer in  coustomer_list %}
+  <tr>
+    <td>{{coustomer.name}}</td>
+    <td><a href = '{% url "coustomers:display" coustomer.id %}'>TEXT</a></td>
+    <td><a href = '{% url "coustomers:pdf" coustomer.id %}'>PDF</a></td>
+  </tr>
+
+    {% endfor %}
+</table>
+
+<a href = '/coustomers/create'>Coustomer Details</a><br><br>
+</body>
+</html>
